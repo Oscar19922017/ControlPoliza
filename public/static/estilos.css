@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F3F2F2;
+    color: #201E1D;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.cabecera {
+    background: #AE1800;
+    color: #FFFFFF;
+    padding: 16px 20px;
+    border-bottom: 4px solid #201E1D;
+}
+
+.cabecera h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.cabecera .fecha {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+.contenido {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.pie {
+    background: #201E1D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+/* Tarjetas de contadores */
+.contadores {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.tarjeta {
+    flex: 1;
+    min-width: 150px;
+    padding: 16px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.tarjeta.verde { background: #1F7A4D; }
+.tarjeta.ambar { background: #E8A13D; }
+.tarjeta.rojo { background: #AE1800; }
+
+.tarjeta h2 {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 6px;
+}
+
+.tarjeta .numero {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Botón descargar */
+.accion {
+    margin-bottom: 24px;
+}
+
+.btn-descargar {
+    display: inline-block;
+    background: #AE1800;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-descargar:hover {
+    background: #8A1500;
+}
+
+/* Paneles */
+.panel {
+    background: #FFFFFF;
+    border: 1px solid #D6D2D1;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.panel h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #AE1800;
+}
+
+.panel ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+.panel ul li {
+    margin-bottom: 6px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #D6D2D1;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+th {
+    background: #E6E3E2;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+tr.vencida {
+    background: #FCEDEA;
+}
+
+tr.por_vencer {
+    background: #FDF3E7;
+}
+
+/* Etiquetas de estado */
+.estado-vencida { color: #8A1500; font-weight: bold; }
+.estado-por_vencer { color: #B87A00; font-weight: bold; }
+.estado-vigente { color: #1F7A4D; font-weight: bold; }
+
+.etiqueta {
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.etiqueta {
+    background: #E6E3E2;
+    color: #201E1D;
+}
+
+/* Enlaces de aviso */
+a {
+    color: #AE1800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo: celular */
+@media (max-width: 768px) {
+    .contadores {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 6px 4px;
+    }
+}

@@ -24,7 +24,7 @@
     <h3>Primas por aseguradora (pólizas no vencidas)</h3>
     <ul>
         {% for aseguradora, suma in primas.items() %}
-        <li><strong>{{ aseguradora }}:</strong> CRC {{ suma:,.0f }}</li>
+        <li><strong>{{ aseguradora }}:</strong> CRC {{ '{:,.0f}'.format(suma) }}</li>
         {% endfor %}
     </ul>
 </section>
